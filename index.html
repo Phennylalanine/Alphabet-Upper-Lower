@@ -9,7 +9,9 @@
   <style>
     @font-face {
       font-family: 'Handfish';
-      src: url('fonts/Handfish.TTF') format('truetype');
+      src: url('fonts/Handfish.ttf') format('truetype'); /* Corrected file extension case */
+      font-weight: normal;
+      font-style: normal;
     }
 
     body {
@@ -20,7 +22,7 @@
     }
 
     #question {
-      font-family: Handfish, ;
+      font-family: 'Handfish', Arial, sans-serif; /* Correct order and syntax */
       font-size: 2em;
       margin-bottom: 20px;
     }
@@ -46,6 +48,13 @@
     #score {
       position: absolute;
       top: 10px;
+      right: 20px;
+      font-weight: bold;
+    }
+
+    #streak {
+      position: absolute;
+      top: 40px;
       right: 20px;
       font-weight: bold;
     }
