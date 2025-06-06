@@ -4,38 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Typing Challenge</title>
+
+  <!-- Custom Font -->
   <style>
+    @font-face {
+      font-family: 'Handfish';
+      src: url('fonts/Handfish.TTF') format('truetype');
+    }
+
     body {
       font-family: Arial, sans-serif;
       text-align: center;
       margin-top: 50px;
       background-color: #f9f9f9;
     }
+
     #question {
+      font-family: 'Handfish', sans-serif;
       font-size: 2em;
       margin-bottom: 20px;
     }
+
     #answerInput {
       font-size: 1.2em;
       padding: 10px;
       width: 300px;
     }
+
     #nextBtn {
       display: none;
       margin-top: 20px;
       padding: 10px 20px;
       font-size: 1em;
     }
+
     #feedback {
       margin-top: 20px;
       font-size: 1.2em;
     }
+
     #score {
       position: absolute;
       top: 10px;
       right: 20px;
       font-weight: bold;
     }
+
     /* Start screen styles */
     #startScreen {
       position: fixed;
@@ -49,9 +63,11 @@
       justify-content: center;
       z-index: 9999;
     }
+
     #startMessage {
       text-align: center;
     }
+
     #startBtn {
       padding: 10px 20px;
       font-size: 18px;
